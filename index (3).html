@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Budi Santoso | Spesialis Jantung & Pembuluh Darah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .gradient-bg { background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); }
+        .card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center space-x-2">
+                    <i data-lucide="stethosope" class="text-blue-600 w-8 h-8"></i>
+                    <span class="text-xl font-bold text-slate-900">Dr. Budi Santoso</span>
+                </div>
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="#home" class="hover:text-blue-600 transition">Beranda</a>
+                    <a href="#about" class="hover:text-blue-600 transition">Tentang</a>
+                    <a href="#services" class="hover:text-blue-600 transition">Layanan</a>
+                    <a href="#schedule" class="hover:text-blue-600 transition">Jadwal</a>
+                    <a href="#contact" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition">Konsultasi</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="p-2"><i data-lucide="menu"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b px-4 py-4 space-y-4">
+            <a href="#home" class="block hover:text-blue-600">Beranda</a>
+            <a href="#about" class="block hover:text-blue-600">Tentang</a>
+            <a href="#services" class="block hover:text-blue-600">Layanan</a>
+            <a href="#schedule" class="block hover:text-blue-600">Jadwal</a>
+            <a href="#contact" class="block text-blue-600 font-bold">Konsultasi</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 gradient-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 space-y-6">
+                <span class="bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-sm font-semibold tracking-wide uppercase">Spesialis Jantung</span>
+                <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 leading-tight">
+                    Dedikasi Penuh untuk <span class="text-blue-600">Kesehatan Jantung</span> Anda.
+                </h1>
+                <p class="text-lg text-slate-600 max-w-lg">
+                    Memberikan pelayanan medis berkualitas dengan teknologi terkini dan pendekatan yang ramah pasien untuk kualitas hidup yang lebih baik.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4 pt-4">
+                    <a href="#schedule" class="flex items-center justify-center space-x-2 bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-200">
+                        <span>Buat Janji Temu</span>
+                        <i data-lucide="calendar" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#services" class="flex items-center justify-center space-x-2 border border-slate-300 bg-white text-slate-700 px-8 py-4 rounded-xl font-bold hover:bg-slate-50 transition">
+                        <span>Lihat Layanan</span>
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 mt-12 md:mt-0 relative">
+                <div class="w-72 h-72 md:w-96 md:h-96 bg-blue-600 rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-10 animate-pulse"></div>
+                <img src="profil.jpg" alt="Dokter Profesional" class="relative rounded-3xl shadow-2xl z-10 w-full max-w-md mx-auto">
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="space-y-2">
+                    <p class="text-3xl font-bold text-blue-600">15+</p>
+                    <p class="text-slate-500 font-medium">Tahun Pengalaman</p>
+                </div>
+                <div class="space-y-2">
+                    <p class="text-3xl font-bold text-blue-600">5000+</p>
+                    <p class="text-slate-500 font-medium">Pasien Terbantu</p>
+                </div>
+                <div class="space-y-2">
+                    <p class="text-3xl font-bold text-blue-600">20+</p>
+                    <p class="text-slate-500 font-medium">Penghargaan Medis</p>
+                </div>
+                <div class="space-y-2">
+                    <p class="text-3xl font-bold text-blue-600">99%</p>
+                    <p class="text-slate-500 font-medium">Kepuasan Pasien</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="download.jpeg" alt="Dr. Budi Santoso di Ruang Praktik" class="rounded-2xl shadow-xl">
+                </div>
+                <div class="md:w-1/2 space-y-6">
+                    <h2 class="text-3xl font-bold text-slate-900">Mengenal Lebih Dekat Dr. Budi Santoso, Sp.JP</h2>
+                    <p class="text-slate-600 leading-relaxed text-lg">
+                        Lulusan terbaik Fakultas Kedokteran Universitas Indonesia dan menyelesaikan spesialisasi di Harvard Medical School. Dr. Budi memiliki keahlian khusus dalam intervensi kardiologi dan pencegahan penyakit kardiovaskular.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="flex items-center space-x-3 text-slate-700">
+                            <i data-lucide="check-circle" class="text-green-500"></i>
+                            <span>Sertifikasi Internasional</span>
+                        </div>
+                        <div class="flex items-center space-x-3 text-slate-700">
+                            <i data-lucide="check-circle" class="text-green-500"></i>
+                            <span>Anggota IDI & PERKI</span>
+                        </div>
+                        <div class="flex items-center space-x-3 text-slate-700">
+                            <i data-lucide="check-circle" class="text-green-500"></i>
+                            <span>Teknologi Diagnostik AI</span>
+                        </div>
+                        <div class="flex items-center space-x-3 text-slate-700">
+                            <i data-lucide="check-circle" class="text-green-500"></i>
+                            <span>Layanan Home Care</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-slate-900 mb-4">Layanan Medis Utama</h2>
+            <p class="text-slate-500 mb-12 max-w-2xl mx-auto">Kami menyediakan berbagai layanan pemeriksaan dan tindakan jantung yang didukung oleh fasilitas medis modern.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="p-8 border border-slate-100 rounded-3xl bg-slate-50 card-hover">
+                    <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="activity" class="text-blue-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Check-up Jantung Rutin</h3>
+                    <p class="text-slate-600">Pemeriksaan menyeluruh untuk mendeteksi dini potensi masalah kesehatan jantung Anda.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="p-8 border border-slate-100 rounded-3xl bg-slate-50 card-hover">
+                    <div class="w-14 h-14 bg-red-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="heart-pulse" class="text-red-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Ekokardiografi (USG Jantung)</h3>
+                    <p class="text-slate-600">Pemindaian detail struktur dan fungsi jantung menggunakan gelombang suara tingkat tinggi.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="p-8 border border-slate-100 rounded-3xl bg-slate-50 card-hover">
+                    <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="clipboard-list" class="text-green-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Manajemen Hipertensi</h3>
+                    <p class="text-slate-600">Konsultasi dan pengobatan terpadu untuk menjaga tekanan darah tetap dalam batas normal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2 space-y-6">
+                <h2 class="text-3xl font-bold">Jadwal Praktik</h2>
+                <p class="text-slate-400">Silakan pilih waktu yang sesuai untuk melakukan konsultasi tatap muka di rumah sakit atau klinik.</p>
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center border-b border-slate-700 pb-2">
+                        <span class="font-medium">Senin - Rabu</span>
+                        <span class="text-blue-400 font-bold">09:00 - 15:00</span>
+                    </div>
+                    <div class="flex justify-between items-center border-b border-slate-700 pb-2">
+                        <span class="font-medium">Kamis - Jumat</span>
+                        <span class="text-blue-400 font-bold">13:00 - 18:00</span>
+                    </div>
+                    <div class="flex justify-between items-center border-b border-slate-700 pb-2">
+                        <span class="font-medium">Sabtu</span>
+                        <span class="text-blue-400 font-bold">08:00 - 12:00</span>
+                    </div>
+                    <div class="flex justify-between items-center pb-2">
+                        <span class="font-medium">Minggu</span>
+                        <span class="text-red-400 italic">Tutup (Darurat Saja)</span>
+                    </div>
+                </div>
+                <div class="pt-6">
+                    <div class="flex items-center space-x-3 text-slate-300 mb-2">
+                        <i data-lucide="map-pin" class="w-5 h-5"></i>
+                        <span>Rumah Sakit Jantung Sehat, Jakarta Selatan</span>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 w-full bg-white text-slate-900 p-8 rounded-3xl shadow-2xl">
+                <h3 class="text-xl font-bold mb-6 text-center">Pesan Jadwal Cepat</h3>
+                <form id="appointment-form" class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium mb-1">Nama Lengkap</label>
+                        <input type="text" placeholder="Masukkan nama Anda" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-600 transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-1">Nomor WhatsApp</label>
+                        <input type="tel" placeholder="0812xxxxxx" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-600 transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-1">Tanggal Rencana</label>
+                        <input type="date" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-600 transition">
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white font-bold py-4 rounded-xl hover:bg-blue-700 transition">
+                        Kirim Permintaan
+                    </button>
+                    <p class="text-xs text-center text-slate-400 italic">Asisten kami akan menghubungi Anda kembali untuk konfirmasi.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-slate-50 py-12 border-t">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <i data-lucide="stethoscope" class="text-blue-600 w-6 h-6"></i>
+                        <span class="text-xl font-bold">Dr. Budi</span>
+                    </div>
+                    <p class="text-slate-500">Membangun masyarakat sehat dengan pelayanan jantung yang holistik dan terpercaya.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Navigasi</h4>
+                    <ul class="space-y-2 text-slate-600">
+                        <li><a href="#home" class="hover:text-blue-600">Beranda</a></li>
+                        <li><a href="#about" class="hover:text-blue-600">Tentang Dokter</a></li>
+                        <li><a href="#services" class="hover:text-blue-600">Layanan</a></li>
+                        <li><a href="#schedule" class="hover:text-blue-600">Pesan Jadwal</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Kontak</h4>
+                    <ul class="space-y-2 text-slate-600">
+                        <li class="flex items-center space-x-2">
+                            <i data-lucide="phone" class="w-4 h-4 text-blue-600"></i>
+                            <span>(021) 1234567</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i data-lucide="mail" class="w-4 h-4 text-blue-600"></i>
+                            <span>kontak@drbudisatoso.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Media Sosial</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-white border rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition"><i data-lucide="instagram"></i></a>
+                        <a href="#" class="w-10 h-10 bg-white border rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition"><i data-lucide="linkedin"></i></a>
+                        <a href="#" class="w-10 h-10 bg-white border rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition"><i data-lucide="twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t pt-8 text-center text-slate-400 text-sm">
+                <p>&copy; 2024 Dr. Budi Santoso, Sp.JP. Seluruh Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Modal for Message -->
+    <div id="modal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4">
+        <div class="absolute inset-0 bg-slate-900/50 backdrop-blur-sm"></div>
+        <div class="relative bg-white rounded-3xl p-8 max-w-sm w-full text-center shadow-2xl">
+            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i data-lucide="check" class="text-green-600 w-8 h-8"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Pesan Terkirim!</h3>
+            <p class="text-slate-600 mb-6">Terima kasih. Kami akan menghubungi Anda segera melalui WhatsApp.</p>
+            <button id="close-modal" class="w-full bg-slate-900 text-white py-3 rounded-xl font-bold">Tutup</button>
+        </div>
+    </div>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Form Submission Simulation
+        const form = document.getElementById('appointment-form');
+        const modal = document.getElementById('modal');
+        const closeModal = document.getElementById('close-modal');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            modal.classList.remove('hidden');
+            form.reset();
+        });
+
+        closeModal.addEventListener('click', () => {
+            modal.classList.add('hidden');
+        });
+
+        // Smooth active link handling (optional)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                mobileMenu.classList.add('hidden');
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
